@@ -2616,6 +2616,7 @@ input[type="radio"]+label:before {
 }
 
 .image.main video {
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -3053,11 +3054,16 @@ a.arrow:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem; /* Add spacing between videos */
-    padding: 0; /* Reset padding */
-    margin: 0 auto; /* Center the gallery */
-    max-width: calc(100% - 2rem); /* Leave margin on left and right */
-    box-sizing: border-box; /* Include padding and border in size calculation */
+    gap: 1rem;
+    /* Add spacing between videos */
+    padding: 0;
+    /* Reset padding */
+    margin: 0 auto;
+    /* Center the gallery */
+    max-width: 100%;
+    /* Leave margin on left and right */
+    box-sizing: border-box;
+    /* Include padding and border in size calculation */
 }
 
 
@@ -3071,11 +3077,21 @@ a.arrow:before {
 }
 
 .gallery video {
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
 
 .gallery a img {
+    display: block;
+    height: 25vw;
+    min-height: 18rem;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.gallery img {
     display: block;
     height: 25vw;
     min-height: 18rem;
@@ -3242,16 +3258,31 @@ a.arrow:before {
         max-width: 100vw;
     }
 
+    .gallery img {
+        height: 20rem;
+    }
+
+    .gallery .landscape img {
+        height: 25rem;
+    }
+
+    .gallery .portrait img {
+        height: 25rem;
+    }
+
 }
 
 @media screen and (max-width: 736px) {
 
     .gallery {
-        margin: 0 auto; /* Center the gallery */
-        max-width: calc(100% - 1rem); /* Set consistent left and right margins */
-        justify-content: center; /* Center the videos */
+        margin: 0 auto;
+        /* Center the gallery */
+        max-width: calc(100% - 1rem);
+        /* Set consistent left and right margins */
+        justify-content: center;
+        /* Center the videos */
     }
-   
+
 
     .gallery a {
         margin: 0.625rem 0 0 0.625rem;
@@ -3267,6 +3298,18 @@ a.arrow:before {
     }
 
     .gallery a.portrait img {
+        height: 30rem;
+    }
+
+    .gallery img {
+        height: 20rem;
+    }
+
+    .gallery .landscape img {
+        height: 20rem;
+    }
+
+    .gallery .portrait img {
         height: 30rem;
     }
 
@@ -3286,6 +3329,19 @@ a.arrow:before {
     .gallery a.portrait img {
         height: 14rem;
     }
+
+    /* .gallery  img {
+        height: 12rem;
+        min-height: 0;
+    }
+
+    .gallery .landscape img {
+        height: 12rem;
+    }
+
+    .gallery .portrait img {
+        height: 14rem;
+    } */
 
 }
 
@@ -4057,3 +4113,33 @@ body.is-ie #wrapper>section>.content>section {
     height: auto;
     flex-grow: 1;
 }
+
+/* @media screen and (max-width: 1152px) {
+    footer li a{
+        color: #000000 !important;
+    }
+    footer li h3{
+        color: #000000 !important;
+    }
+    footer li span{
+        color: #000000 !important;
+    }
+} */
+
+/* @media screen and (max-width: 736px) {
+    footer li a{
+        color: #000000 !important;
+    }
+    footer li h3{
+        color: #000000 !important;
+    }
+    footer li span{
+        color: #000000 !important;
+    }
+}*/
+
+@media screen and (max-width: 480px) {
+    #wrapper section>footer * {
+        color: #000000 !important;
+    }
+} 
