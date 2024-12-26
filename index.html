@@ -13,6 +13,10 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
 </head>
 
 <body class="is-preload">
@@ -25,7 +29,6 @@
             <header>
                 <h1>Davood Dorostkar</h1>
                 <p>Robotics Engineer
-                    <!-- <br> <a href="https://github.com/davood-dorostkar">GitHub</a> / <a href="www.linkedin.com/in/davood-dorostkar">Linkedin</a> -->
                 </p>
                 <ul class="actions">
                     <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
@@ -39,28 +42,53 @@
         <!-- Section -->
         <section id="first">
             <header>
-                <h3>Jan 2024</h3>
-                <h2>Autonomous Tesla Simulation in CARLA and ROS2</h2>
+                <h3>January 2024</h3>
+                <h2>Autonomous Tesla Car Simulation in CARLA and ROS2</h2>
             </header>
             <div class="content">
                 <p>
                     Used CARLA Simulator and ROS2 to simulate a Tesla car. Investigated different controllers such as
                     PID, Stanley, LQR, MPC, etc. with various scenarios.
                 </p>
-                <!-- <a href="#" class="button large">Learn More</a> -->
                 <span class="image main">
-                    <video autoplay loop>
+                    <video autoplay loop muted>
                         <source src="media/ros-carla-stanley.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
                     </video>
-                    <!-- <img src="media/ros-carla-stanley.mp4" alt="" /> -->
                 </span>
             </div>
         </section>
 
-        <!-- Section -->
         <section>
             <header>
-                <h3>Dec 2023</h3>
+                <h3>July 2024</h3>
+                <h2>Mapping for Autonomous Robot</h2>
+            </header>
+            <div class="content">
+                <p>Utilizing LIDAR sensor to create a Occupancy Grid Map for an indoor autonomous robot.</p>
+                <div class="gallery">
+                    <video autoplay loop muted class="landscape">
+                        <source src="media/inverse_measurement.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="inner-gallery">
+                        <video autoplay loop muted class="inner-gallery-element">
+                            <source src="media/occupancy_belief.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video autoplay loop muted class="inner-gallery-element">
+                            <source src="media/true_map.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h3>December 2023</h3>
                 <h2>Path Planning for Autonomous Vehicle in CARLA</h2>
             </header>
             <div class="content">
@@ -74,16 +102,94 @@
                     <li>Stanley for lateral control</li>
                     <li>PID for longitudinal control</li>
                 </ul>
-                <span class="image main">
-                    <video autoplay loop>
+                <span class="image main" style="display: block; margin: 0 auto; text-align: center; max-width: 100%;">
+                    <video autoplay loop muted>
                         <source src="media/planning.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
                     </video>
                 </span>
             </div>
         </section>
 
-        <!-- Section -->
         <section>
+            <header>
+                <h3>October 2023</h3>
+                <h2>Controller Design for Autonomous Vehicle in CARLA</h2>
+            </header>
+            <div class="content">
+                <p>
+                    Utilized CARLA simulator to implement various control algorithms for Autonomous Vehicles. The
+                    involved algorithms included:
+                </p>
+                <ul>
+                    <li>PID for longitudinal motion control</li>
+                    <li>Pure Pursuit for lateral motion control</li>
+                    <li>Stanley for lateral motion control</li>
+                </ul>
+                <span class="image main">
+                    <video autoplay loop muted>
+                        <source src="media/control.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </span>
+            </div>
+        </section>
+
+
+        <section>
+            <header>
+                <h3>July 2021</h3>
+                <h2>Design and Simulate a Wheeled Robot in Gazebo</h2>
+            </header>
+            <div class="content">
+                <p>A four-wheel robot was designed using URDF from scratch and simulated with a LIDAR sensor in the
+                    Gazebo simulator.</p>
+                <div class="gallery" style="gap: 1rem;">
+                    <video autoplay loop muted class="landscape">
+                        <source src="media/gazebo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video autoplay loop muted>
+                        <source src="media/gazebo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h3>June 2021</h3>
+                <h2>Path Planning & Control a Turtlebot in ROS1</h2>
+            </header>
+            <div class="content">
+                <p>A turtlebot robot was simulated using ROS1 nodes and created a predefined path with C++. The designed
+                    controller keeps the turtlebot in the path.</p>
+                <div class="gallery">
+                    <video autoplay loop muted class="landscape">
+                        <source src="media/turtlebot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h2>Duis sed adpiscing veroeros amet</h2>
+            </header>
+            <div class="content">
+                <p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare
+                    velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+                <ul class="actions">
+                    <li><a href="#" class="button primary large">Get Started</a></li>
+                    <li><a href="#" class="button large">Learn More</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <section>
             <header>
                 <h2>Ultrices erat magna sed condimentum</h2>
             </header>
@@ -91,7 +197,6 @@
                 <p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac
                     quam. Lorem ipsum dolor sit nullam.</p>
 
-                <!-- Section -->
                 <section>
                     <header>
                         <h3>Erat aliquam</h3>
@@ -111,7 +216,6 @@
                     </div>
                 </section>
 
-                <!-- Section -->
                 <section>
                     <header>
                         <h3>Nisl consequat</h3>
@@ -129,7 +233,6 @@
                     </div>
                 </section>
 
-                <!-- Section -->
                 <section>
                     <header>
                         <h3>Lorem gravida</h3>
@@ -150,22 +253,8 @@
                 </section>
 
             </div>
-        </section>
+        </section> -->
 
-        <!-- Section -->
-        <section>
-            <header>
-                <h2>Duis sed adpiscing veroeros amet</h2>
-            </header>
-            <div class="content">
-                <p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-                    velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-                <ul class="actions">
-                    <li><a href="#" class="button primary large">Get Started</a></li>
-                    <li><a href="#" class="button large">Learn More</a></li>
-                </ul>
-            </div>
-        </section>
 
         <!-- Elements -->
         <!--
