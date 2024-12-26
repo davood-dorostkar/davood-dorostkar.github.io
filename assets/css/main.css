@@ -4142,4 +4142,21 @@ body.is-ie #wrapper>section>.content>section {
     #wrapper section>footer * {
         color: #000000 !important;
     }
-} 
+
+}
+
+
+.gallery video.small-element {
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 480px) {
+    .gallery video.small-element {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
