@@ -3052,10 +3052,14 @@ a.arrow:before {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    margin: -1.25rem 0 0 -1.25rem;
-    width: calc(100% + 1.25rem);
     justify-content: center;
+    gap: 1rem; /* Add spacing between videos */
+    padding: 0; /* Reset padding */
+    margin: 0 auto; /* Center the gallery */
+    max-width: calc(100% - 2rem); /* Leave margin on left and right */
+    box-sizing: border-box; /* Include padding and border in size calculation */
 }
+
 
 .gallery a {
     border-bottom: 0;
@@ -3064,6 +3068,11 @@ a.arrow:before {
     outline: 0;
     position: relative;
     width: calc(50% - 1.25rem);
+}
+
+.gallery video {
+    max-width: 100%;
+    height: auto;
 }
 
 .gallery a img {
@@ -3238,10 +3247,11 @@ a.arrow:before {
 @media screen and (max-width: 736px) {
 
     .gallery {
-        margin: -0.625rem 0 0 -0.625rem;
-        width: calc(100% + 0.625rem);
-        justify-content: center;
+        margin: 0 auto; /* Center the gallery */
+        max-width: calc(100% - 1rem); /* Set consistent left and right margins */
+        justify-content: center; /* Center the videos */
     }
+   
 
     .gallery a {
         margin: 0.625rem 0 0 0.625rem;
